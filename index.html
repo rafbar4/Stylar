@@ -3,49 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylar - Twój Osobisty Stylista</title>
+    <title>Stylar - Dobór stroju według pogody</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>👔 Stylar</h1>
-            <p class="subtitle">Twój osobisty asystent stylistyczny</p>
+            <p class="subtitle">Inteligentny dobór stroju według pogody</p>
         </header>
 
         <main>
-            <!-- Formularz -->
             <div class="form-container">
                 <div class="form-group">
                     <label for="miasto">🌍 Miasto:</label>
-                    <input type="text" id="miasto" placeholder="np. Poznań" required>
+                    <input type="text" id="miasto" placeholder="np. Poznań" value="Poznań">
                 </div>
 
                 <div class="form-group">
                     <label for="okazja">🎯 Okazja:</label>
-                    <select id="okazja" required>
+                    <select id="okazja">
                         <option value="">Wybierz okazję</option>
-                        <option value="casual">Casual</option>
-                        <option value="formal">Formalne</option>
-                        <option value="sport">Sport</option>
-                        <option value="party">Impreza</option>
-                        <option value="work">Praca</option>
+                        <option value="casual">Casual - Codzienny</option>
+                        <option value="formal">Formalne - Eleganckie</option>
+                        <option value="sport">Sport - Aktywność</option>
+                        <option value="party">Impreza - Wyjście</option>
+                        <option value="work">Praca - Biuro</option>
                     </select>
                 </div>
 
-                <button id="dobierz-button" onclick="dobierzStroj()">✨ Dobierz strój</button>
+                <button id="dobierz-button">✨ Dobierz strój</button>
             </div>
 
-            <!-- Komunikaty -->
             <div id="message" class="message"></div>
-            <div id="weather-info" class="weather-info"></div>
-
-            <!-- Wyniki -->
+            <div id="weather-info"></div>
             <div id="outfit-results" class="outfit-results"></div>
         </main>
 
         <footer>
-            <p>© 2025 Stylar - Projekt studencki UAM</p>
+            <p>Aplikacja webowa - 2025</p>
         </footer>
     </div>
 
